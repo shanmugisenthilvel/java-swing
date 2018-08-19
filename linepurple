@@ -1,0 +1,22 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import javax.swing.JFrame;
+public class purpleline extends JFrame
+{
+	public purpleline()
+	{
+		setSize(960,960);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+	public void paint(Graphics g)
+	{
+		Color PURPLE =new Color(255,0,255);
+	g.setColor(PURPLE);
+		g.drawLine(100,100, 250, 260);}
+
+public static void main(String[] args)
+{
+	purpleline t=new purpleline();
+}
+}
