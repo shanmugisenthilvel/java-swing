@@ -1,0 +1,31 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class rectangle extends JPanel {
+
+  public void paintComponent(Graphics g) {
+    super.paintComponent(g);
+    Graphics2D g2d = (Graphics2D) g;
+
+    
+    Color PURPLE =new Color(255,0,255);
+    g2d.setColor(PURPLE);
+    g2d.fillRect(100, 150, 100, 60);
+  
+  }
+
+  public static void main(String[] args) {
+    rectangle rects = new rectangle();
+    JFrame frame = new JFrame("Rectangles");
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.add(rects);
+    frame.setSize(360, 300);
+    frame.setLocationRelativeTo(null);
+    frame.setVisible(true);
+  }
+}
+
